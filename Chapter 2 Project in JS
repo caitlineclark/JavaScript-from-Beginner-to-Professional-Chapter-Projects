@@ -1,0 +1,17 @@
+//mi to km converter
+
+let myMiles = 130;
+let myKm = myMiles * 1.609;
+console.log(" the distance of " + myMiles + " miles is equal to " + myKm + " kilometers ");
+
+
+
+//bmi calculator
+
+let inches = 62;
+let pounds = 118;
+let weight = pounds / 2.2046; // in kilos
+let height = inches * 2.54; // height in centimeters
+console.log(weight, height);
+let bmi = weight/(height/100*height/100);
+console.log(bmi);
