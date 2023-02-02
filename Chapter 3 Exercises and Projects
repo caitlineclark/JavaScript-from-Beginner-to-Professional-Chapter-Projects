@@ -1,0 +1,98 @@
+// Chapter 3 Exercises
+
+// 3.1 //
+
+const list = ["milk", " bread", " apples"];
+list[1] = " bananas";
+
+//3.2 //
+
+const myList = [];
+myList.push("Milk", "Bread", "Apples");
+myList.splice(1,1 "Bananas", "Eggs");
+const removeLast = myList.pop();
+console.log(removeLast);
+myList.sort();
+console.log(myList.indexOf("Milk"));
+myList.splice(1, 0, "Carrots", "Lettuce");
+const myList2 = ["Juice", "Pop"];
+const finalList = myList.concat(myList2, myList2);
+console.log(finalList.lastIndexOf("Pop"));
+console.log(finalList);
+
+
+// 3.3 //
+
+const myArr = [1, 2, 3];
+const bigArr = [myArr, myArr, myArr];
+console.log(bigArr[1][1]);
+console.log(bigArr[0][1]);
+console.log(bigArr[2][1]);
+
+// 3.4 //
+
+const myCar = {
+  make: "Toyota"
+  model: "Rav4"
+  tires: 4,
+  doors: 4, 
+  color: "gray",
+  forSale: false,
+};
+
+let propColor = "color";
+myCar[propColor] = "green";
+propColor = "forSale";
+myCar[propColor] = true;
+console.log(myCar.make + " " + myCar.model);
+console.log(myCar.forSale);
+
+//3.5
+
+const people = {friends:[]};
+const friend1 = {first: "Tara", last: "Martin", id: 1};
+const friend2 = {second: "Lisa", last: "Wayland", id: 2};
+const friend3 = {third: "Cat", last: "Tamsky", id: 3};
+people.friends.push(friend1, friend2, friend3);
+console.log(people);
+
+
+// Chapter 3 Projects
+
+//Project 1
+
+const theList = ['Caitlin', 'Clark', true, 35, null, undefined,
+{test: 'one', score: 99}, ['one', 'two']];
+
+theList.pop();
+theList.shift();
+theList.unshift("FIRST");
+theList[3] = "hello World";
+theList[2] = "MIDDLE";
+theList.push("LAST");
+console.log(theList);
+
+//Project 2
+
+const inventory = [];
+const item3 = {
+  name: "butter",
+  model: "kerrygold",
+  cost: 5,
+  qty: 16,
+}
+const item2 = {
+  name: "kimchi",
+  model: "not your mothers",
+  cost: 10, 
+  qty: 25,
+}
+const item1 = {
+  name: "eggs",
+  model: "maxxie free range",
+  cost: 12,
+  qty: 24
+}
+inventory.push(item1, item2, item3);
+console.log(inventory);
+console.log(inventory[2].qty);
