@@ -1,0 +1,135 @@
+// Chapter 4 Exercises
+
+//4.1
+
+let coffee = true;
+
+if(coffee){
+  console.log("I have coffee");
+} else {
+  console.log("I do not have coffee");
+}
+
+//4.2
+
+let age = prompt("What is your age?");
+age = Number(age);
+let message;
+if (age >= 21){
+	message = ("You can enter and purchase alcohol.");
+}else if(age >= 19){
+}else{
+	message = ("You cannot come in and purchase alcohol.");
+}
+console.log(message);
+
+//4.3
+
+const id = true;
+const message = (id) ? "May Enter" : "Denied Entry";
+console.log(message);
+
+// 4.4
+
+const randomNumber = Math.floor(Math.random() * 6);
+let answer = "Your answer is not what you want";
+let question = prompt("Ask the 8 Ball anything");
+switch (randomNumber) {
+  case 0:
+    answer = "It has already been decided";
+    break;
+  case 1:
+    answer = "The answer is within you";
+    break;
+  case 2:
+    answer = "The answer is no";
+    break;
+  case 3:
+    answer  = "The answer is yes";
+    break;
+  default:
+    answer = "The answer is unsure";
+}
+let output = "You asked me " + question +" . I think that " + answer;
+console.log(output);
+
+// 4.5
+
+let prize = prompt("Pick a number 0-10");
+prize = Number(prize);
+let output = "My Selection: ";
+switch (prize){
+  case 0:
+    output += "Top Tier ";
+  case 1:
+    output += "Almost Top Tier ";
+    break;
+  case 2:
+    output += "Kind of Top Tier ";
+  case 3:
+    output += "Mid at Best ";
+  case 4:
+    output += "Not Even Mid ";
+  case 5:
+    output += "Bottom Bro ";
+    break;
+  default:
+    output += "You are a loser ";
+}
+console.log(output);
+
+
+//Chapter 4 Projects
+
+// Project 1
+
+let val = prompt("What number are you thinking?");
+val  = Number(val);
+let num = 100;
+let message = "nothing";
+if (val > num) {
+  message = val + " is greater than " + num;
+} else if (val === num) {
+  message = val + " is equal to " + num;
+}
+console.log(message);
+console.log(message);
+
+// Project 2
+
+let person = prompt("Enter a name");
+let message;
+switch (person) {
+  case "Kyle" :
+  case "Karen" :
+  case "Tara" :
+  case "Bobby Joe" :
+  message = person + " is my friend";
+  break;
+  default :
+  message = "I do not know " + person;
+}
+console.log(message);
+
+
+// Project 3
+
+const myArr = ["Rock", "Paper", "Scissors"];
+let computer = Math.floor(Math.random() * 3);
+let platyer = Math.floor(Math.random() * 3);
+let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " ";
+if (player === computer) {
+  message += "it's a tie";
+} else if (player > computer) {
+    message += "computer wins";
+} else {
+  message += "player wins";
+}
+} else {
+  if (computer == 2 && player == 0) {
+    message += "player wins";
+} else {
+    message += "computer wins";
+  }
+}
+console.log(message);
